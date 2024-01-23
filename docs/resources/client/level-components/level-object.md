@@ -43,6 +43,9 @@ Property keys reflect the keys found in the following table, whereas property va
 
 ### Level Object Data
 **Level Object Structure**
+These are all the known properties possessed by various objects.
+Entries marked with a `?` are unknown, or they are used and their use is not known. Keys marked with an ellipsis represent a range of unknown keys.
+Partially known entries are listed seperately.
 
 | Key | Name/Value                           | Type                                            | Description                                                                        |
 |:----|:-------------------------------------|:------------------------------------------------|:-----------------------------------------------------------------------------------|
@@ -63,6 +66,7 @@ Property keys reflect the keys found in the following table, whereas property va
 | 15  | Player Color 1                       | **bool**                                        | the Player Color 1 property of any Color trigger                                   |
 | 16  | Player Color 2                       | **bool**                                        | the Player Color 2 property of any Color trigger                                   |
 | 17  | Blending                             | **bool**                                        | the Blending property of any Color trigger                                         |
+| 18  | ?                                    | ?                                               | ?                                                                                  |
 | 19  | 1.9 Color Channel ID                 | **integer**                                     | the legacy Color Channel ID property used in 1.9 levels. If set to a valid value, both the Main and Secondary Color Channel ID properties will be ignored. |
 | 20  | Editor Layer 1                       | **integer**                                     | the Editor Layer 1 property of the object                                          |
 | 21  | Main Color Channel ID                | **integer**                                     | the Main Color Channel ID property of the object                                   |
@@ -70,12 +74,13 @@ Property keys reflect the keys found in the following table, whereas property va
 | 23  | Target Color ID                      | **integer**                                     | the Target Color ID property in an interactive object                              |
 | 24  | Z Layer                              | **integer**                                     | the Z Layer of the object                                                          |
 | 25  | Z Order                              | **integer**                                     | the Z Order of the object                                                          |
+| ... | ?                                    | ?                                               | ?                                                                                  |
 | 28  | Offset X                             | **integer**                                     | the Offset X property of the Move trigger                                          |
 | 29  | Offset Y                             | **integer**                                     | the Offset Y property of the Move trigger                                          |
 | 30  | Easing                               | **[Easing](enumerations.md#easing)**            | the Easing type of the effect of a trigger                                         |
 | 31  | Text                                 | **string**                                      | the text of the text object in [base64]()                                          |
 | 32  | Scaling                              | **float**                                       | the scaling of the object                                                          |
-| 33  | Single Group ID                      | **integer**                                     | a group ID given to the object                                                      |
+| 33  | Single Group ID                      | **integer**                                     | a group ID given to the object                                                     |
 | 34  | Group Parent                         | **bool**                                        | the Group Parent property of the object                                            |
 | 35  | Opacity                              | **float**                                       | the opacity value of a trigger                                                     |
 | 41  | Main Color HSV Enabled               | **bool**                                        | whether the HSV mode is enabled for the Main Color of the object                   |
@@ -89,7 +94,7 @@ Property keys reflect the keys found in the following table, whereas property va
 | 49  | Copied Color HSV                     | **[HSV]()**                                     | the HSV adjustment values of the Copied Color property of a trigger                |
 | 50  | Copied Color ID                      | **integer**                                     | the Copied Color Channel ID in a trigger                                           |
 | 51  | Target Group ID                      | **integer**                                     | the Target Group ID in a trigger                                                   |
-| 52  | Pulse Target Type                    | **[Pulse Target Type](enumerations.md#pulse-target-type)**| the Target Type property of the Pulse trigger                                      |
+| 52  | Pulse Target Type                    | **[Pulse Target Type](enumerations.md#pulse-target-type)**| the Target Type property of the Pulse trigger                            |
 | 54  | Yellow Teleportation Portal Y Offset | **float**                                       | the Y offset of the yellow from the blue teleportation portal                      |
 | 55  | Teleport Portal Ease                 | **bool**                                                 | The Smooth Ease property within Teleport Portals                          |
 | 56  | Activate Group                       | **bool**                                        | the Activate Group property of the trigger                                         |
@@ -114,15 +119,16 @@ Property keys reflect the keys found in the following table, whereas property va
 | 76  | Animation ID                         | **integer**                                     | the Animation ID property of the Animate trigger                                   |
 | 77  | Count                                | **integer**                                     | the Count property of the Pickup trigger or the Pickup Item                        |
 | 78  | Subtract Count                       | **bool**                                        | the Subtract Count property of the Pickup trigger or the Pickup Item               |
-| 79  | Pickup Mode                          | **[Pickup Item Mode](enumerations.md#pickup-item-mode)**| the Pickup Mode property of the Pickup Item                                        |
+| 79  | Pickup Mode                          | **[Pickup Item Mode](enumerations.md#pickup-item-mode)**| the Pickup Mode property of the Pickup Item                                |
 | 80  | Item/Block ID                        | **integer**                                     | the Item/Block ID property of an object                                            |
 | 81  | Hold Mode                            | **bool**                                        | the Hold Mode property of the Touch trigger                                        |
-| 82  | Toggle Mode                          | **[Touch Toggle Mode](enumerations.md#touch-toggle-mode)**| the Toggle Mode property of the Touch trigger                                      |
+| 82  | Toggle Mode                          | **[Touch Toggle Mode](enumerations.md#touch-toggle-mode)**| the Toggle Mode property of the Touch trigger                            |
+| ... | ?                                    | ?                                               | ?                                                                                  |
 | 84  | Interval                             | **float**                                       | the Interval property of the Shake trigger                                         |
 | 85  | Easing Rate                          | **float**                                       | the Easing Rate property of a trigger                                              |
 | 86  | Exclusive                            | **bool**                                        | the Exclusive property of a Pulse trigger                                          |
 | 87  | Multi-Trigger                        | **bool**                                        | the Multi-Trigger property of a trigger                                            |
-| 88  | Comparison                           | **[Instant Count Comparison](enumerations.md#instant-count-comparison)**| the Comparison property of the Instant Count trigger                               |
+| 88  | Comparison                           | **[Instant Count Comparison](enumerations.md#instant-count-comparison)**| the Comparison property of the Instant Count trigger       |
 | 89  | Dual Mode                            | **bool**                                        | the Dual Mode property of the Touch trigger                                        |
 | 90  | Speed                                | **float**                                       | the Speed property of the Follow Player Y trigger                                  |
 | 91  | Follow Delay                         | **float**                                       | the Follow Delay property of the Follow Player Y trigger                           |
@@ -133,16 +139,49 @@ Property keys reflect the keys found in the following table, whereas property va
 | 96  | Disable Glow                         | **bool**                                        | the Disable Glow property of the object                                            |
 | 97  | Custom Rotation Speed                | **float**                                       | the Custom Rotation Speed property of the rotating object in degrees per second    |
 | 98  | Disable Rotation                     | **bool**                                        | the Disable Rotation property of the rotating object                               |
-| 99  | Multi Activate (Orbs)                      | **bool**                                        | the Multi Activate property of Orbs                                   |
+| 99  | Multi Activate (Orbs)                | **bool**                                        | the Multi Activate property of Orbs                                                |
 | 100 | Enable Use Target                    | **bool**                                        | the Enable Use Target property of the Move trigger                                 |
-| 101 | Target Pos Coordinates               | **[Target Pos Coordinates](enumerations.md#target-pos-coordinates)**| the Target Pos Coordinates property of the Move trigger                            |
+| 101 | Target Pos Coordinates               | **[Target Pos Coordinates](enumerations.md#target-pos-coordinates)**| the Target Pos Coordinates property of the Move trigger        |
 | 102 | Editor Disable                       | **bool**                                        | the Editor Disable property of the Spawn trigger                                   |
 | 103 | High Detail                          | **bool**                                        | the High Detail property of the object                                             |
-| 104 | Multi Activate (Triggers)                         | **bool**                                        | The Multi Activate Property of Triggers                                          |
+| 104 | Multi Activate (Triggers)            | **bool**                                        | The Multi Activate Property of Triggers                                            |
 | 105 | Max Speed                            | **float**                                       | the Max Speed property of the Follow Player Y trigger                              |
 | 106 | Randomize Start                      | **bool**                                        | the Randomize Start property of the animated object                                |
 | 107 | Animation Speed                      | **float**                                       | the Animation Speed property of the animated object                                |
 | 108 | Linked Group ID                      | **integer**                                     | the Linked Group ID property of the object                                         |
+| ... | ?                                    | ?                                               | ?                                                                                  |
+| 138 | Player 1                             | **bool**(?)                                     | Player 1 property of the Move trigger                                              |
+| ... | ?                                    | ?                                               | ?                                                                                  |
+| 141 | Lock To Camera X                     | **bool**                                        | Lock To Camera X property of the Move trigger                                      |
+| 142 | Lock To Camera Y                     | **bool**                                        | Lock To Camera Y property of the Move trigger                                      |
+| ... | ?                                    | ?                                               | ?                                                                                  |
+| 200 | Player 2                             | **bool**(?)                                     | Player 2 property of the Move trigger                                              |
+| ... | ?                                    | ?                                               | ?                                                                                  |
+| 394 | Direction Mode                       | **integer**                                     | Direction Mode property of the Move trigger                                        |
+| ... | ?                                    | ?                                               | ?                                                                                  |
+| 441 | Spawn Ordered                        | **integer**                                     | Spawn Ordered property of the Spawn trigger                                        |
+| 442 | Spawn Remap Table                    | **integer**                                     | Spawn Remap Table property of the Spawn trigger                                    |
+| ... | ?                                    | ?                                               | ?                                                                                  |
+| 476 | Item Type 1                          | **[Item Type](enumerations.md)**                | Item Type 1 property of the Item Edit and Item Compare triggers                    |
+| 477 | Item Type 2                          | **[Item Type](enumerations.md)**                | Item Type 2 property of the Item Edit and Item Compare triggers                    |
+| 478 | Target Variable Type                 | **integer**                                     | Item Target Type property of the Item Edit trigger                                 |
+| 479 | Expression Modifier 1                | **float**                                       | Item Modifier 1 property of the Item Edit and Item Compare triggers                |
+| 480 | Expression Operator 1                | **[Expression Operator](enumerations.md)**      | Item Expression Operator 1 property of the Item Edit and Item Compare triggers     |
+| 481 | Expression Operator 2                | **[Expression Operator](enumerations.md)**      | Item Expression Operator 2 property of the Item Compare trigger                    |
+| 482 | Expression Modifier Operator         | **[Expression Operator](enumerations.md)** for the Item Edit trigger, **[Expression Comparison](enumerations.md)** for the Item Compare trigger | Item Modifier Operator property of the Item Edit trigger |
+| 483 | Expression Modifier 2                | **float**                                       | Item Modifier 2 property of the Item Compare trigger                               |
+| 484 | Tolerance                            | **float**                                       | Item Tolerance property Item Compare trigger                                       |
+| 485 | Round Function 1                     | **[Rounding Function](enumerations.md)**        | Item Round Function 1 property of the Item Edit and Item Compare triggers          |
+| 486 | Round Function 2                     | **[Rounding Function](enumerations.md)**        | Item Round Function 2 property of the Item Edit and Item Compare triggers          |
+| 491 | Persistent                           | **bool**                                        | Persistent property of the Persistent Item trigger                                 |
+| 492 | Target All Items                     | **bool**                                        | Target All Items property of the Persistent Item trigger                           |
+| 493 | Reset Item                           | **bool**                                        | Reset Item property of the Persistent Item trigger                                 |
+| 494 | Use Timer                            | **bool**                                        | Use Timer property of the Persistent Item trigger                                  |
+| ... | ?                                    | ?                                               | ?                                                                                  |
+| 578 | Sign Function 1                      | **[Sign Function](enumerations.md)**            | Item Sign Function 1 property of the Item Edit and Item Compare triggers           |
+| 579 | Sign Function 2                      | **[Sign Function](enumerations.md)**            | Item Sign Function 2 property of the Item Edit and Item Compare triggers           |
+| ... | ?                                    | ?                                               | ?                                                                                  |
+| 581 | Spawn Reset Remap                    | **bool**                                        | Spawn Reset Remap property of the Spawn trigger                                    |
 
 ***Undiscovered Existing Features***
 
