@@ -149,12 +149,12 @@ Partially known entries are listed seperately.
 | 107 | Animation Speed                      | **float**                                       | the Animation Speed property of the animated object                                |
 | 108 | Linked Group ID                      | **integer**                                     | the Linked Group ID property of the object                                         |
 | ... | ?                                    | ?                                               | ?                                                                                  |
-| 138 | Player 1                             | **bool**(?)                                     | Player 1 property of the Move trigger                                              |
+| 138 | Player 1                             | **bool**                                        | Player 1 property of the Move trigger                                              |
 | ... | ?                                    | ?                                               | ?                                                                                  |
 | 141 | Lock To Camera X                     | **bool**                                        | Lock To Camera X property of the Move trigger                                      |
 | 142 | Lock To Camera Y                     | **bool**                                        | Lock To Camera Y property of the Move trigger                                      |
 | ... | ?                                    | ?                                               | ?                                                                                  |
-| 200 | Player 2                             | **bool**(?)                                     | Player 2 property of the Move trigger                                              |
+| 200 | Player 2                             | **bool**                                        | Player 2 property of the Move trigger                                              |
 | ... | ?                                    | ?                                               | ?                                                                                  |
 | 394 | Direction Mode                       | **integer**                                     | Direction Mode property of the Move trigger                                        |
 | ... | ?                                    | ?                                               | ?                                                                                  |
