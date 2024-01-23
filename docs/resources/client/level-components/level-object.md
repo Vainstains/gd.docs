@@ -38,6 +38,7 @@ Property keys reflect the keys found in the following table, whereas property va
 | **float**           | decimal numerical value string, using `.` as the decimal point separator (e.g. `12.41`)     |
 | **any enumeration** | same as **integer**                                                                         |
 | **integer array**   | all values are separated by `.` (e.g. `1.42.51.23` for `{ 1, 42, 51, 23 }`)                 |
+| **table**           | same as **integer array** except it is ordered like `key.value.key.value`, similar to how object data is ordered. length will always be a multiple of 2. |
 | **[HSV]()**         | `{h}a{s}a{v}a{s_checked}a{v_checked}`, where each name reflects the respective HSV property |
 | **string**          | raw string without quotation marks (e.g. `ExampleString`)                                   |
 
@@ -160,26 +161,26 @@ Partially known entries are listed seperately.
 | 394 | Direction Mode                       | **integer**                                     | Direction Mode property of the Move trigger                                        |
 | ... | ?                                    | ?                                               | ?                                                                                  |
 | 441 | Spawn Ordered                        | **integer**                                     | Spawn Ordered property of the Spawn trigger                                        |
-| 442 | Spawn Remap Table                    | **integer**                                     | Spawn Remap Table property of the Spawn trigger                                    |
+| 442 | Spawn Remap Table                    | **table**                                       | Spawn Remap Table property of the Spawn trigger                                    |
 | ... | ?                                    | ?                                               | ?                                                                                  |
-| 476 | Item Type 1                          | **[Item Type](enumerations.md)**                | Item Type 1 property of the Item Edit and Item Compare triggers                    |
-| 477 | Item Type 2                          | **[Item Type](enumerations.md)**                | Item Type 2 property of the Item Edit and Item Compare triggers                    |
-| 478 | Target Variable Type                 | **integer**                                     | Item Target Type property of the Item Edit trigger                                 |
+| 476 | Item Type 1                          | **[Item Type](enumerations.md#item-type)**      | Item Type 1 property of the Item Edit and Item Compare triggers                    |
+| 477 | Item Type 2                          | **[Item Type](enumerations.md#item-type)**      | Item Type 2 property of the Item Edit and Item Compare triggers                    |
+| 478 | Target Item Type                     | **[Item Type](enumerations.md#item-type)**      | Target Item Type property of the Item Edit trigger                                 |
 | 479 | Expression Modifier 1                | **float**                                       | Item Modifier 1 property of the Item Edit and Item Compare triggers                |
-| 480 | Expression Operator 1                | **[Expression Operator](enumerations.md)**      | Item Expression Operator 1 property of the Item Edit and Item Compare triggers     |
-| 481 | Expression Operator 2                | **[Expression Operator](enumerations.md)**      | Item Expression Operator 2 property of the Item Compare trigger                    |
-| 482 | Expression Modifier Operator         | **[Expression Operator](enumerations.md)** for the Item Edit trigger, **[Expression Comparison](enumerations.md)** for the Item Compare trigger | Item Modifier Operator property of the Item Edit trigger |
+| 480 | Expression Operator 1                | **[Expression Operator](enumerations.md#expression-operator)** | Item Expression Operator 1 property of the Item Edit and Item Compare triggers |
+| 481 | Expression Operator 2                | **[Expression Operator](enumerations.md#expression-operator)** | Item Expression Operator 2 property of the Item Compare trigger |
+| 482 | Expression Modifier Operator         | **[Expression Operator](enumerations.md#expression-operator)** for the Item Edit trigger, **[Expression Comparison](enumerations.md#expression-comparison)** for the Item Compare trigger | Item Modifier Operator property of the Item Edit and Item Compare triggers |
 | 483 | Expression Modifier 2                | **float**                                       | Item Modifier 2 property of the Item Compare trigger                               |
 | 484 | Tolerance                            | **float**                                       | Item Tolerance property Item Compare trigger                                       |
-| 485 | Round Function 1                     | **[Rounding Function](enumerations.md)**        | Item Round Function 1 property of the Item Edit and Item Compare triggers          |
-| 486 | Round Function 2                     | **[Rounding Function](enumerations.md)**        | Item Round Function 2 property of the Item Edit and Item Compare triggers          |
+| 485 | Round Function 1                     | **[Rounding Function](enumerations.md#rounding-function)** | Item Round Function 1 property of the Item Edit and Item Compare triggers |
+| 486 | Round Function 2                     | **[Rounding Function](enumerations.md#rounding-function)** | Item Round Function 2 property of the Item Edit and Item Compare triggers |
 | 491 | Persistent                           | **bool**                                        | Persistent property of the Persistent Item trigger                                 |
 | 492 | Target All Items                     | **bool**                                        | Target All Items property of the Persistent Item trigger                           |
 | 493 | Reset Item                           | **bool**                                        | Reset Item property of the Persistent Item trigger                                 |
 | 494 | Use Timer                            | **bool**                                        | Use Timer property of the Persistent Item trigger                                  |
 | ... | ?                                    | ?                                               | ?                                                                                  |
-| 578 | Sign Function 1                      | **[Sign Function](enumerations.md)**            | Item Sign Function 1 property of the Item Edit and Item Compare triggers           |
-| 579 | Sign Function 2                      | **[Sign Function](enumerations.md)**            | Item Sign Function 2 property of the Item Edit and Item Compare triggers           |
+| 578 | Sign Function 1                      | **[Sign Function](enumerations.md#sign-function)**| Item Sign Function 1 property of the Item Edit and Item Compare triggers         |
+| 579 | Sign Function 2                      | **[Sign Function](enumerations.md#sign-function)**| Item Sign Function 2 property of the Item Edit and Item Compare triggers         |
 | ... | ?                                    | ?                                               | ?                                                                                  |
 | 581 | Spawn Reset Remap                    | **bool**                                        | Spawn Reset Remap property of the Spawn trigger                                    |
 
