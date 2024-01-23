@@ -72,7 +72,7 @@ Property keys reflect the keys found in the following table, whereas property va
 | 25  | Z Order                              | **integer**                                     | the Z Order of the object                                                          |
 | 28  | Offset X                             | **integer**                                     | the Offset X property of the Move trigger                                          |
 | 29  | Offset Y                             | **integer**                                     | the Offset Y property of the Move trigger                                          |
-| 30  | Easing                               | **[Easing](enumerations.md)**                   | the Easing type of the effect of a trigger                                         |
+| 30  | Easing                               | **[Easing](enumerations.md#easing)**            | the Easing type of the effect of a trigger                                         |
 | 31  | Text                                 | **string**                                      | the text of the text object in [base64]()                                          |
 | 32  | Scaling                              | **float**                                       | the scaling of the object                                                          |
 | 33  | Single Group ID                      | **integer**                                     | a group ID given to the object                                                      |
@@ -85,11 +85,11 @@ Property keys reflect the keys found in the following table, whereas property va
 | 45  | Fade In                              | **float**                                       | the Fade In property of the Pulse trigger                                          |
 | 46  | Hold                                 | **float**                                       | the Hold property of the Pulse trigger                                             |
 | 47  | Fade Out                             | **float**                                       | the Fade Out property of the Pulse trigger                                         |
-| 48  | Pulse Mode                           | **[Pulse Mode](enumerations.md)**               | the Pulse Mode property of the Pulse trigger                                       |
+| 48  | Pulse Mode                           | **[Pulse Mode](enumerations.md#pulse-mode)**    | the Pulse Mode property of the Pulse trigger                                       |
 | 49  | Copied Color HSV                     | **[HSV]()**                                     | the HSV adjustment values of the Copied Color property of a trigger                |
 | 50  | Copied Color ID                      | **integer**                                     | the Copied Color Channel ID in a trigger                                           |
 | 51  | Target Group ID                      | **integer**                                     | the Target Group ID in a trigger                                                   |
-| 52  | Pulse Target Type                    | **[Pulse Target Type](enumerations.md)**        | the Target Type property of the Pulse trigger                                      |
+| 52  | Pulse Target Type                    | **[Pulse Target Type](enumerations.md#pulse-target-type)**| the Target Type property of the Pulse trigger                                      |
 | 54  | Yellow Teleportation Portal Y Offset | **float**                                       | the Y offset of the yellow from the blue teleportation portal                      |
 | 55  | Teleport Portal Ease                 | **bool**                                                 | The Smooth Ease property within Teleport Portals                          |
 | 56  | Activate Group                       | **bool**                                        | the Activate Group property of the trigger                                         |
@@ -114,15 +114,15 @@ Property keys reflect the keys found in the following table, whereas property va
 | 76  | Animation ID                         | **integer**                                     | the Animation ID property of the Animate trigger                                   |
 | 77  | Count                                | **integer**                                     | the Count property of the Pickup trigger or the Pickup Item                        |
 | 78  | Subtract Count                       | **bool**                                        | the Subtract Count property of the Pickup trigger or the Pickup Item               |
-| 79  | Pickup Mode                          | **[Pickup Item Mode](enumerations.md)**         | the Pickup Mode property of the Pickup Item                                        |
+| 79  | Pickup Mode                          | **[Pickup Item Mode](enumerations.md#pickup-item-mode)**| the Pickup Mode property of the Pickup Item                                        |
 | 80  | Item/Block ID                        | **integer**                                     | the Item/Block ID property of an object                                            |
 | 81  | Hold Mode                            | **bool**                                        | the Hold Mode property of the Touch trigger                                        |
-| 82  | Toggle Mode                          | **[Touch Toggle Mode](enumerations.md)**        | the Toggle Mode property of the Touch trigger                                      |
+| 82  | Toggle Mode                          | **[Touch Toggle Mode](enumerations.md#touch-toggle-mode)**| the Toggle Mode property of the Touch trigger                                      |
 | 84  | Interval                             | **float**                                       | the Interval property of the Shake trigger                                         |
 | 85  | Easing Rate                          | **float**                                       | the Easing Rate property of a trigger                                              |
 | 86  | Exclusive                            | **bool**                                        | the Exclusive property of a Pulse trigger                                          |
 | 87  | Multi-Trigger                        | **bool**                                        | the Multi-Trigger property of a trigger                                            |
-| 88  | Comparison                           | **[Instant Count Comparison](enumerations.md)** | the Comparison property of the Instant Count trigger                               |
+| 88  | Comparison                           | **[Instant Count Comparison](enumerations.md#instant-count-comparison)**| the Comparison property of the Instant Count trigger                               |
 | 89  | Dual Mode                            | **bool**                                        | the Dual Mode property of the Touch trigger                                        |
 | 90  | Speed                                | **float**                                       | the Speed property of the Follow Player Y trigger                                  |
 | 91  | Follow Delay                         | **float**                                       | the Follow Delay property of the Follow Player Y trigger                           |
@@ -135,7 +135,7 @@ Property keys reflect the keys found in the following table, whereas property va
 | 98  | Disable Rotation                     | **bool**                                        | the Disable Rotation property of the rotating object                               |
 | 99  | Multi Activate (Orbs)                      | **bool**                                        | the Multi Activate property of Orbs                                   |
 | 100 | Enable Use Target                    | **bool**                                        | the Enable Use Target property of the Move trigger                                 |
-| 101 | Target Pos Coordinates               | **[Target Pos Coordinates](enumerations.md)**   | the Target Pos Coordinates property of the Move trigger                            |
+| 101 | Target Pos Coordinates               | **[Target Pos Coordinates](enumerations.md#target-pos-coordinates)**| the Target Pos Coordinates property of the Move trigger                            |
 | 102 | Editor Disable                       | **bool**                                        | the Editor Disable property of the Spawn trigger                                   |
 | 103 | High Detail                          | **bool**                                        | the High Detail property of the object                                             |
 | 104 | Multi Activate (Triggers)                         | **bool**                                        | The Multi Activate Property of Triggers                                          |
