@@ -67,7 +67,6 @@ Partially known entries are listed seperately.
 | 15  | Player Color 1                       | **bool**                                        | the Player Color 1 property of any Color trigger                                   |
 | 16  | Player Color 2                       | **bool**                                        | the Player Color 2 property of any Color trigger                                   |
 | 17  | Blending                             | **bool**                                        | the Blending property of any Color trigger                                         |
-| 18  | ?                                    | ?                                               | ?                                                                                  |
 | 19  | 1.9 Color Channel ID                 | **integer**                                     | the legacy Color Channel ID property used in 1.9 levels. If set to a valid value, both the Main and Secondary Color Channel ID properties will be ignored. |
 | 20  | Editor Layer 1                       | **integer**                                     | the Editor Layer 1 property of the object                                          |
 | 21  | Main Color Channel ID                | **integer**                                     | the Main Color Channel ID property of the object                                   |
@@ -75,7 +74,6 @@ Partially known entries are listed seperately.
 | 23  | Target Color ID                      | **integer**                                     | the Target Color ID property in an interactive object                              |
 | 24  | Z Layer                              | **integer**                                     | the Z Layer of the object                                                          |
 | 25  | Z Order                              | **integer**                                     | the Z Order of the object                                                          |
-| ... | ?                                    | ?                                               | ?                                                                                  |
 | 28  | Offset X                             | **integer**                                     | the Offset X property of the Move trigger                                          |
 | 29  | Offset Y                             | **integer**                                     | the Offset Y property of the Move trigger                                          |
 | 30  | Easing                               | **[Easing](enumerations.md#easing)**            | the Easing type of the effect of a trigger                                         |
